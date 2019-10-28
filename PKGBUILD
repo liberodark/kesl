@@ -18,7 +18,7 @@ sha512sums_x86_64=('b50fb626523fa3f06cc809279b960db682c9eee89c9cd55d8fe9eb318f8d
 package() {
   cd $srcdir
   tar xvf data.tar.xz
-  cp -r var/opt/kaspersky/kesl/install/ $pkgdir
+  cp -r var/opt/kaspersky/kesl/install/* $pkgdir
   #install -vDm644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
   #install -vDm644 $srcdir/$pkgname.png $pkgdir/usr/share/pixmaps/$pkgname.png
   echo "Kaspersky Endpoint Security 10 SP1 MR1 for Linux has been installed successfully,"
