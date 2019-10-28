@@ -21,4 +21,12 @@ package() {
   cp -r var/opt/kaspersky/kesl/install/ $pkgdir
   #install -vDm644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
   #install -vDm644 $srcdir/$pkgname.png $pkgdir/usr/share/pixmaps/$pkgname.png
+  echo '####################################################################"
+  echo "#Kaspersky Endpoint Security 10 SP1 MR1 for Linux has been installed successfully,"
+  echo "#but it must be properly configured before using."
+  echo "#Please run /opt/kaspersky/kesl/bin/kesl-setup.pl script"
+  echo "#manually to configure it."
+  echo "####################################################################"
+  
+
 }
